@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body{
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+/* navigation bar  start*/
+.navbar-brand{
+    width: 10%;
+}
+/* navigation bar  end*/
+/* header start */
+header{
+    margin: 7% 0;
+    position: relative;
+}
+h1{
+    font-size: 90px;
+}
+header button.btn-style{
+    color: #5143D9;
+    transition: all 1s;
+}
+header button.btn-style:hover{
+    color: white;
+    background-color: #5143D9;
+}
+header .image1-2{
+    position: relative;
+    z-index: 0;
+}
+header .image1-2 .image1{
+    position: absolute;
+    top: 6%;
+    left: -5%;
+    height: 10%;
+    width: 10%;
+    border: 5px solid white;
+    border-radius: 50%;
+    z-index: 1;
+}
+header .image1-2 .image2{
+    position: absolute;
+    top: 30%;
+    left: -7%;
+    height: 15%;
+    width: 15%;
+    border: 5px solid white;
+    border-radius: 50%;
+    z-index: 1;
+}
+header .image1-2 svg.crumps{
+    position: absolute;
+    z-index: 1;
+    bottom: 2%;
+    right: -5%;
+    fill: yellow;
+}
+header .image1-2 .image3{
+    position: absolute;
+    z-index: 1;
+    top: -2%;
+    right: -5%;
+}
+
+div.h1line svg{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    fill: #867CE5;
+}
+.booking-check{
+    position: absolute;
+    bottom: -10%;
+    right: 18% ;
+}
+.lb1 label , .lb2 label , .lb3 label{
+    position: absolute;
+    top: -70%;
+    left: 5%;
+}
+.search-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #4539B8;
+    position: absolute;
+    top: 25%;
+    right: -3%;
+}
+/* header end */
+/*carousel start*/
+.carousel{
+    overflow: hidden;
+    
+}
+.carousel button{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 30%;
+}
+.carousel-control-prev{
+    
+    left: -50%;
+    transition: all 0.5s;
+}
+.carousel-control-next{
+    right: -50%;
+    transition: all 0.5s;
+}
+.carousel:hover .carousel-control-prev{
+    left:0;
+}
+.carousel:hover .carousel-control-next{
+    right:0;
+}
+/*carousel end*/
+/* about start */
+.starsvg{
+    fill: yellow;
+}
+.liked{
+    width: 20%;
+    top: -15%;
+    left: -10%;
+}
+.av{
+    width: 30%;
+}
+.feeds{
+    width: 40%;
+    bottom: 5%;
+    left: 10%;
+}
+.feed-likes{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #5143D9;
+}
+.knife{
+    height: 50px;
+    width: 50px;
+}
+.twodots{
+    width: 90%;
+    height: 50%;
+    top: 0;
+    left: 0;
+}
+/* about end */
+/*Featured Hotels start*/
+.hotloc{
+    left: 5%;
+    bottom: 5%;
+}
+.scaled{
+    transition: all 1s;
+}
+.scaled:hover img{
+    transition: all 1s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.brands{
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+.brands:hover{
+    filter: grayscale(0);
+}
+.wow-emoji{
+    top:20%;
+    left:5%;
+    width: 50px;
+    height: 50px;
+
+}
+.hovering:hover h5 , .hovering:hover{
+    color: rgb(81, 67, 217);
+    cursor: pointer;
+}
+.navhover:hover{
+    background-color: #867CE5;
+    color: #4539B8;
+    transition: all 0.5s;
+}
+.notifications{
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: -10%;
+    right: -10%;
+    z-index: 3;
+    animation-name: noti;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes noti{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.navhovering{
+    padding: 10px;
+    opacity: 0;
+    top: 125%;
+    width: 200px;
+}
+.navhoverings{
+    overflow: hidden;
+}
+.navhoverings:hover{
+    transition: all 1s;
+    overflow: visible;
+}
+.navhoverings:hover .navhovering{
+    transition: all 1s;
+    opacity: 1;
+    top: 70%;
+}
+.hovering2{
+    position: absolute;
+    width: 200px ;
+    top: 0 ;
+    left:150% ;
+    opacity: 0 ;
+    transition: all 1s;
+}
+div.hovering2link:hover div.hovering2{
+    position: absolute;
+    left: 100%;
+    opacity: 1;
+}
